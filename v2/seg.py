@@ -5,7 +5,7 @@ import cv2
 from skimage import filters, measure, morphology
 
 # Carregar a Imagem
-ds = pydicom.dcmread("C:/Users/rapha/OneDrive/Área de Trabalho/Facul Prog/Backend/Novo_CT_1h")
+ds = pydicom.dcmread("C:/Users/202302417949/Grupo2BackEnd/Novo_CT_1h")
 imagem = ds.pixel_array
 
 # Visualizar uma parte da imagem original
@@ -65,10 +65,10 @@ ds.BitsAllocated = 8
 ds.HighBit = 7
 
 # Salvando como um novo arquivo DICOM
-ds.save_as("C:/Users/rapha/OneDrive/Área de Trabalho/Facul Prog/Backend/Novo_Att_CT_1h")
+ds.save_as("C:/Users/202302417949/Grupo2BackEnd/Novo_Att_CT_1h")
 
 # 4. Leitura do arquivo DICOM modificado
-ds_modificado = pydicom.dcmread("C:/Users/rapha/OneDrive/Área de Trabalho/Facul Prog/Backend/Novo_Att_CT_1h")
+ds_modificado = pydicom.dcmread("C:/Users/202302417949/Grupo2BackEnd/Novo_Att_CT_1h")
 imagem_reaberta = ds_modificado.pixel_array
 
 # 5. Visualização da imagem reaberta
