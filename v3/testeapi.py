@@ -4,7 +4,7 @@ from flask import Flask, request, send_file, Response
 
 
 url = "http://127.0.0.1:5000//anonimizar"
-file_path = "C:/Users/202302417949/Grupo2BackEnd/Novo_CT_1h.dcm"
+file_path = "C:/Users/Matheus/Desktop/ibmec/Grupo2BackEnd/Novo_CT_1h.dcm"
 output_path = "arquivo_anonimizado.dcm"
 
 with open(file_path, 'rb') as file:

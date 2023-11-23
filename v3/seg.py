@@ -29,10 +29,10 @@ def dicom_to_nifti(dicom_folder, output_filename):
 
 def main():
     # Diretório das imagens DICOM
-    input_path = "C:/Users/202302417949/Grupo2BackEnd/Novo_CT_1h.dcm"
+    input_path = "C:/Users/Matheus/Desktop/ibmec/Grupo2BackEnd/imagens"
 
-    if not os.listdir(input_path):
-        print("O diretório não contém imagens DICOM.")
+    if not os.path.isdir(input_path):
+        print("O caminho especificado não é um diretório.")
         return
 
     # Convertendo DICOM para NIFTI
